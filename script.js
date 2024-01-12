@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+const etiquetasH5 = document.querySelectorAll('h5');
+etiquetasH5.forEach(h5 => {
+    h5.addEventListener('click', function () {
+        cambiarColoresAleatorios(this);
+    });
+});
 // document.addEventListener("DOMContentLoaded", function () {
 //     var classElement = document.querySelector(".col");
 
